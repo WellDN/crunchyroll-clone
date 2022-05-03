@@ -17,7 +17,7 @@
 nav{
     width: 100%;
     position: absolute;
-    top: -33px;
+    top: -32px;
     right: 80px;
     padding: 20px 8%;
     display: flex;
@@ -40,12 +40,14 @@ nav ul li{
 }
 nav ul li a{
     text-transform: uppercase;
-    color: #fff;
+    color: rgb(219, 219, 219);
     font-weight: 800;
     cursor: pointer;
     font-size: 0.875rem;
     line-height: 1.125rem;
     padding: 17px;
+    text-decoration: none;
+    transition: color 0.2s ease 0s;
     
 }
 .back-video{
