@@ -17,7 +17,7 @@
 nav{
     width: 100%;
     position: absolute;
-    top: -34px;
+    top: -33px;
     right: 80px;
     padding: 20px 8%;
     display: flex;
@@ -26,15 +26,15 @@ nav{
       
 }
 nav .logo{
-    width: 18%;
-    padding: 31px;
+    width: 189px;
+    padding: 30px;
     cursor: pointer;
 }
 nav ul li{
     list-style: none;
     display: inline-block;
-    margin-left: 120px;
-    margin-right: -75px;
+    margin-left: 140px;
+    margin-right: -110px;
     text-transform: uppercase;
     
 }
@@ -45,7 +45,7 @@ nav ul li a{
     cursor: pointer;
     font-size: 0.875rem;
     line-height: 1.125rem;
-    padding: ;
+    padding: 17px;
     
 }
 .back-video{
