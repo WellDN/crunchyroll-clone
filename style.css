@@ -42,13 +42,21 @@ nav ul li a{
     text-transform: uppercase;
     color: rgb(219, 219, 219);
     font-weight: 800;
+    min-width: 7.5rem;
+    border: 0px;
     cursor: pointer;
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-    padding: 17px;
+    font-size: 0.8rem;
+    height: 2.5rem;
+    padding: 9px 4vh 12px;
+    align-items: center;
     text-decoration: none;
     transition: color 0.2s ease 0s;
-    
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    justify-content: center;
+    background-color: transparent;
+    box-shadow: inset 0 0 0rem 2px rgb(212, 212, 212);
+    align-items: center;
 }
 .back-video{
     position: absolute;
