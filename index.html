@@ -9,10 +9,8 @@
     <link rel="shortcut icon" href="IMG/topilogo.png">
 </head>
 <body>
-    <div class="header">
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="IMG/video.mp4" type="video/mp4">
-        </video>
+    <div id="root">
+        <div class="layout">
         <nav>
             <img src="IMG/cr_logo.png" class="logo">
             <ul>
@@ -22,16 +20,23 @@
         </nav>
         <div class="stackedlayout">
             <div class="contentblock">
-                <section data-t="alinhamento" class="block">...</section>
+                <section data-t="alinhamento" class="block">
+                    <div class="header">
+                        <video autoplay loop muted plays-inline class="back-video">
+                            <source src="IMG/video.mp4" type="video/mp4">
+                        </video>
+                        </div>
+                </section>
             </div>
-        </div>
-        <section data-t="alinhamento" class="block">
         <div class="cata">
             <h1 type="heavy" class="xd"> O Maior Catálogo de
                 Anime do Mundo</h1>
+                </div>
         </div>
         <div class="cart"></div>
         
+    </div>
+    </div>
     </div>
 </body>
 </html>
