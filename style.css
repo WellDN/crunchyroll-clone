@@ -122,8 +122,6 @@ section {
 }
 
 .block {
-  padding-top: 8.5rem;
-  padding-bottom: 4rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
