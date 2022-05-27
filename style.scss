@@ -15,14 +15,69 @@ body {
     -webkit-font-smoothing: antialiased;
     height: 100%;
 }
+.root {
+    height: 100%;
+}
 .layout {
     min-width: 20rem;
     display: flex;
     flex-direction: column;
     min-height: 100%;
 }
-#root {
-    height: 100%;
+@media (min-width: 35.5rem) {
+.aheader {
+    padding: 0px 2.5rem;
+    max-width: 77.5rem;
+}
+}
+.aheader{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    z-index: var(--z-index-header);
+    padding: 0px 1.25rem;
+    height: 4rem;
+}
+.logoButton{
+    flex: 0 1 8rem;
+    min-width: 7.1875rem;
+}
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+.logo {
+    max-width: 100%;
+}
+@media (min-width: 35.5em) {
+.ButtonsGroup {
+    --button-inline-margin: 0.3125rem;
+    display: inline-flex;
+}
+}
+.ButtonsGroup {
+    --button-block-margin: 0.375rem;
+    --button-inline-margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: calc(-1 * var(--button-block-margin)) calc(-1 * var(--button-inline-margin));
+    flex: 0 0 auto;
+}
+.StyledButton {
+    
+}
+img {
+    -webkit-user-drag: none;
+    user-select: none;
 }
 .header {
     position: absolute;
@@ -41,12 +96,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-      
-}
-nav .logo {
-    width: 189px;
-    padding: 30px;
-    cursor: pointer;
 }
 .d {
     text-transform: uppercase;
@@ -156,6 +205,8 @@ h1, h2, h3, h4, h5, h6 {
     z-index: -1;
 
 }
+
+
 
 @media (min-aspect-ratio: 16/9){
     .back-video{

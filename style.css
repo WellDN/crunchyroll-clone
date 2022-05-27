@@ -15,6 +15,10 @@ body {
   height: 100%;
 }
 
+.root {
+  height: 100%;
+}
+
 .layout {
   min-width: 20rem;
   display: -webkit-box;
@@ -27,8 +31,82 @@ body {
   min-height: 100%;
 }
 
-#root {
-  height: 100%;
+@media (min-width: 35.5rem) {
+  .aheader {
+    padding: 0px 2.5rem;
+    max-width: 77.5rem;
+  }
+}
+
+.aheader {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  z-index: var(--z-index-header);
+  padding: 0px 1.25rem;
+  height: 4rem;
+}
+
+.logoButton {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 8rem;
+          flex: 0 1 8rem;
+  min-width: 7.1875rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+@media (min-width: 35.5em) {
+  .ButtonsGroup {
+    --button-inline-margin: 0.3125rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+.ButtonsGroup {
+  --button-block-margin: 0.375rem;
+  --button-inline-margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: calc(-1 * var(--button-block-margin)) calc(-1 * var(--button-inline-margin));
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+img {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .header {
@@ -55,12 +133,6 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-nav .logo {
-  width: 189px;
-  padding: 30px;
-  cursor: pointer;
 }
 
 .d {
