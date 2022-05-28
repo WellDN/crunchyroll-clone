@@ -101,6 +101,57 @@ a {
           flex: 0 0 auto;
 }
 
+.call {
+  text-transform: uppercase;
+  font-weight: 800;
+  -webkit-transition: color 0.2s ease 0s;
+  transition: color 0.2s ease 0s;
+  cursor: pointer;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
+
+@media (min-width: 35.5em) {
+  .StyledButton2 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+.StyledButton2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  min-width: 7.5rem;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-property: color, background-color, -webkit-box-shadow;
+  transition-property: color, background-color, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow;
+  transition-property: color, background-color, box-shadow, -webkit-box-shadow;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 0px 1rem;
+  color: var(--colors-silver);
+  height: auto;
+}
+
 img {
   -webkit-user-drag: none;
   -webkit-user-select: none;

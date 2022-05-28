@@ -72,8 +72,46 @@ a {
     margin: calc(-1 * var(--button-block-margin)) calc(-1 * var(--button-inline-margin));
     flex: 0 0 auto;
 }
-.StyledButton {
+@media (min-width: 35.5em) {
+.styledButton {
     
+}
+}
+.styledButton {
+
+}
+.call {
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: color 0.2s ease 0s;
+    cursor: pointer;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+}
+@media (min-width: 35.5em) {
+.StyledButton2 {
+    display: inline-flex;
+}
+}
+.StyledButton2 {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    min-width: 7.5rem;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-property: color, background-color, box-shadow;
+    user-select: none;
+    padding: 0px 1rem;
+    color: var(--colors-silver);
+    height: auto;
 }
 img {
     -webkit-user-drag: none;
