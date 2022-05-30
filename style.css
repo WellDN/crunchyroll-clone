@@ -101,25 +101,42 @@ a {
           flex: 0 0 auto;
 }
 
-.call {
-  text-transform: uppercase;
-  font-weight: 800;
-  -webkit-transition: color 0.2s ease 0s;
-  transition: color 0.2s ease 0s;
-  cursor: pointer;
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-}
-
 @media (min-width: 35.5em) {
-  .StyledButton2 {
+  .StyledButton .ButtonsGroup:first-of-type {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
 }
 
-.StyledButton2 {
+.StyledButton .ButtonsGroup:first-of-type {
+  display: none;
+}
+
+@media (min-width: 35.5em) {
+  .StyledButton .ButtonsGroup {
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+  }
+}
+
+.StyledButton .ButtonsGroup {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  margin: var(--button-block-margin) var(--button-inline-margin);
+}
+
+@media (min-width: 35.5em) {
+  .StyledButton {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+.StyledButton {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,186 +169,79 @@ a {
   height: auto;
 }
 
-img {
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+.ButtonsGroup .StyledButton2:last-of-type {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
-.header {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: var(--z-index-under-background);
+@media (min-width: 35.5em) {
+  .ButtonsGroup .StyledButton2 {
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+  }
 }
 
-nav {
-  width: 100%;
-  position: absolute;
-  top: -32px;
-  right: 80px;
-  padding: 20px 8%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.ButtonsGroup .StyledButton2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  margin: var(--button-block-margin) var(--button-inline-margin);
 }
 
-.d {
-  text-transform: uppercase;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  line-height: 1.125rem;
-  font-size: 0.875rem;
-  font-weight: 800;
+@media (min-width: 35.5em) {
+  .StyledButton2 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
-nav ul li {
-  list-style: none;
-  display: inline-block;
-  margin-left: 134px;
-  margin-right: -114px;
-  text-transform: uppercase;
-}
-
-nav ul li a {
-  text-transform: uppercase;
-  color: #dbdbdb;
-  font-weight: 800;
-  min-width: 7.5rem;
-  border: 0px;
-  cursor: pointer;
-  font-size: 0.8rem;
-  height: 2.5rem;
-  padding: 9px 3.8vh 12px;
-  -ms-flex-align: center;
-      align-items: center;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease 0s;
-  transition: color 0.2s ease 0s;
-  -webkit-box-pack: center;
-  -webkit-box-align: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  background-color: transparent;
-  -webkit-box-shadow: inset 0 0 0rem 2.1px #d4d4d4;
-          box-shadow: inset 0 0 0rem 2.1px #d4d4d4;
-  align-items: center;
-}
-
-.stackedlayout {
-  --top-gutter: 2rem;
-  --bottom-gutter: 3rem;
-  padding-bottom: var(--bottom-gutter);
-}
-
-.contentblock {
-  --gutter: 48;
-  --horizontal-padding: 1.25rem;
-  margin-bottom: calc(var(--gutter) * 0.0625rem);
-}
-
-section {
-  display: block;
-}
-
-.block {
+.StyledButton2 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
       align-items: center;
-  padding-top: 6.5rem;
-  padding-bottom: 3.5rem;
-  text-align: center;
+  min-width: 7.5rem;
+  height: 2.5rem;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-property: color, background-color, -webkit-box-shadow;
+  transition-property: color, background-color, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow;
+  transition-property: color, background-color, box-shadow, -webkit-box-shadow;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 0px 1rem;
+  --shadow-color: var(--colors-silver);
+  --shadow-width: 0.125rem;
+  -webkit-box-shadow: inset 0 0 0 var(--shadow-width) var(--shadow-color);
+          box-shadow: inset 0 0 0 var(--shadow-width) var(--shadow-color);
+  color: var(--colors-silver);
 }
 
-div {
-  display: block;
-}
-
-.cata {
-  padding: 0px;
-  margin-bottom: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-      align-items: center;
-  width: 100%;
-  margin-bottom: 3.5rem;
-  min-width: 35.5em;
-}
-
-.xd {
+.call {
+  text-transform: uppercase;
   font-weight: 800;
-  font-size: 3.375rem;
-  line-height: 4rem;
-  font-size: 2.125rem;
-  line-height: 2.75rem;
-  margin-bottom: 1.5rem;
-  font-weight: 500;
-  text-rendering: optimizeLegibility;
-  font-size: 1.75rem;
-  line-height: 2.25rem;
-  color: #fff;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0px;
-}
-
-h1 {
-  display: block;
-  font-size: 2.125rem;
-  line-height: 2.75rem;
-  max-width: 24.375rem;
-  margin-bottom: 2rem;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
-  font-weight: bold;
-}
-
-.back-video {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-@media (min-aspect-ratio: 16 / 9) {
-  .back-video {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media (max-aspect-ratio: 16 / 9) {
-  .back-video {
-    width: auto;
-    height: 100%;
-  }
+  -webkit-transition: color 0.2s ease 0s;
+  transition: color 0.2s ease 0s;
+  cursor: pointer;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
 }
 /*# sourceMappingURL=style.css.map */
