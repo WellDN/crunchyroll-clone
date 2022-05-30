@@ -162,3 +162,66 @@ a {
     font-size: 0.875rem;
     line-height: 1.125rem;
 }
+@media (min-width: 35.5em) {
+    .stackedlayout {
+        --top-gutter: 4.5rem;
+        --bottom-gutter:4.5rem;
+    }
+}
+.stackedlayout {
+    --top-gutter: 2rem;
+    --bottom-gutter: 3rem;
+    padding-bottom: var(--bottom-gutter);
+}
+@media (min-width: 35.5em) {
+    .contentblock {
+        --gutter: 72;
+        --horizontal-padding: 2.5rem;
+    }
+}
+.contentblock {
+    --gutter: 48;
+    --horizontal-padding: 1.25rem;
+    margin-bottom: calc(var(--gutter) * 0.0625rem);
+
+}
+@media (min-width: 35.5em) {
+    .heroblock {
+        padding-top: 8.5rem;
+        padding-bottom: 4rem;
+    }
+}
+.heroblock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 6.5rem;
+    padding-bottom: 3.5rem;
+    text-align: center;
+}
+@media(min-width: 35.5em){
+    .ImageWrapper {
+
+    }
+}
+.ImageWrapper {
+
+}
+@media (min-width: 35.5em){
+    .TitleWrapper {
+
+    }
+}
+.TitleWrapper {
+
+}
+@media (min-width: 35.5em) {
+    .PerksWrapper {
+
+    }
+}
+.PerksWrapper {
+    
+}
