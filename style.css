@@ -259,13 +259,13 @@ a {
 }
 
 @media (min-width: 35.5em) {
-  .contentblock {
+  .ContentBlock {
     --gutter: 72;
     --horizontal-padding: 2.5rem;
   }
 }
 
-.contentblock {
+.ContentBlock {
   --gutter: 48;
   --horizontal-padding: 1.25rem;
   margin-bottom: calc(var(--gutter) * 0.0625rem);
