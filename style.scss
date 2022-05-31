@@ -65,38 +65,26 @@ a {
 }
 .ButtonsGroup {
     --button-block-margin: 0.375rem;
-    --button-inline-margin: 0;
-    display: flex;
     -webkit-box-pack: center;
     justify-content: center;
     margin: calc(-1 * var(--button-block-margin)) calc(-1 * var(--button-inline-margin));
     flex: 0 0 auto;
 }
 @media (min-width: 35.5em) {
-.StyledButton .ButtonsGroup:first-of-type {
+.ButtonsGroup .StyledButton:first-of-type {
     display: inline-flex;
 }
 }
-.StyledButton .ButtonsGroup:first-of-type {
-    display: none;
-}
 @media (min-width: 35.5em) {
-.StyledButton .ButtonsGroup {
+.ButtonsGroup .StyledButton {
     flex: unset
 }
 }
-.StyledButton .ButtonsGroup {
-    flex: 1 1 100%;
+.ButtonsGroup .StyledButton {
     margin: var(--button-block-margin) var(--button-inline-margin);
-}
-@media (min-width: 35.5em) {
-.StyledButton {
-    display: inline-flex;
-}
 }
 .StyledButton {
     position: relative;
-    display: flex;
     -webkit-box-pack: center;
     justify-content: center;
     -webkit-box-align: center;
