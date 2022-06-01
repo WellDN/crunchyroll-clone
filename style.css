@@ -233,8 +233,6 @@ a {
 }
 
 .stackedlayout {
-  --top-gutter: 2rem;
-  --bottom-gutter: 3rem;
   padding-bottom: var(--bottom-gutter);
 }
 
@@ -246,8 +244,6 @@ a {
 }
 
 .ContentBlock {
-  --gutter: 48;
-  --horizontal-padding: 1.25rem;
   margin-bottom: calc(var(--gutter) * 0.0625rem);
 }
 
@@ -270,8 +266,6 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
       align-items: center;
-  padding-top: 6.5rem;
-  padding-bottom: 3.5rem;
   text-align: center;
 }
 
@@ -282,6 +276,14 @@ a {
   width: 100%;
   height: 100%;
   z-index: var(--z-index-under-background);
+}
+
+.back-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 35.5em) {
@@ -325,19 +327,41 @@ a {
   padding: 0px 1.25rem;
 }
 
-.back-video {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+@media (min-width: 35.5em) {
+  .centraltitle {
+    font-size: 2.125rem;
+    line-height: 2.75rem;
+  }
 }
 
-source {
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+@media (min-width: 35.5em) {
+  .centraltitle {
+    max-width: 24.375rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.centraltitle {
+  color: var(--colors-white);
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  margin: 0px;
+}
+
+@media (min-width: 35.5em) {
+  .StyledButton3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 35.5em) {
+  .StyledButton3 {
+    width: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
