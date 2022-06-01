@@ -247,7 +247,7 @@ h1 {
 }
 @media (min-width: 35.5em) {
 .StyledButton3 {
-    display: flex
+    display: inline-flex;
 }
 }
 @media (min-width: 35.5em) {
@@ -255,5 +255,46 @@ h1 {
     width: auto;
 }
 }
+.StyledButton3 {
+    position: relative;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    min-width: 7.5rem;
+    height: 2.5rem;
+    border: 0px;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-property: color, background-color, box-shadow;
+    user-select: none;
+    padding: 0px 1rem;
+    color: var(--colors-woodsmoke);
+    background-color: var(--colors-orange-base);
+}
+.Call2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: color 0.2s ease 0s;
+    cursor: pointer;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+}
+.Perk {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    color: var(--colors-white);
+}
+@media (min-width: 35.5em) {
+    .PerkIcon {
 
+    }
+}
+.PerkIcon {
+    
+}
 
