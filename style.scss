@@ -29,18 +29,17 @@ $--z-index-above-foreground: 2;
 $--z-index-foreground: 1;
 $--z-index-under-background: -1;
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: Lato, sans-serif;
 }
 body {
+    font-family: Lato, sans-serif;
     margin: 0px;
     font-size: 1rem;
     color: rgb(0, 0, 0);
-    background-image: rgb(255, 255, 255);
+    background-color: $--colors-white;
     -webkit-font-smoothing: antialiased;
     height: 100%;
+    display: block;
 }
 div {
     display: block;
