@@ -6,6 +6,39 @@
   font-family: Lato, sans-serif;
 }
 
+:root {
+  --colors-orange-base: rgb(244, 117, 33);
+  --colors-orange-dark: rgb(229, 106, 23);
+  --colors-orange-light: rgb(255, 133, 51);
+  --colors-orange-bright: rgb(255, 148, 77);
+  --colors-blue-base: rgb(33, 57, 68);
+  --colors-blue-dark: rgb(25, 46, 56);
+  --colors-blue-light: rgb(47, 81, 97);
+  --colors-blue-bright: rgb(84, 128, 148);
+  --colors-honey-gold-base: rgb(250, 184, 24);
+  --colors-honey-gold-dark: rgb(214, 153, 11);
+  --colors-honey-gold-light: rgb(255, 201, 77);
+  --colors-honey-gold-bright: rgb(255, 217, 128);
+  --colors-black: rgb(0, 0, 0);
+  --colors-woodsmoke: rgb(20, 21, 25);
+  --colors-shark: rgb(35, 37, 43);
+  --colors-trout: rgb(74, 78, 88);
+  --colors-scarpa-flow: rgb(89, 89, 91);
+  --colors-silver-chalice: rgb(160, 160, 160);
+  --colors-silver: rgb(218, 218, 218);
+  --colors-alabaster: rgb(248, 248, 248);
+  --colors-white: rgb(255, 255, 255);
+  --colors-scooter: rgb(42, 189, 187);
+  --colors-granny-smith-apple: rgb(141, 220, 158);
+  --colors-pomegranate: rgb(239, 67, 35);
+  --z-index-flash-message: 101;
+  --z-index-header: 100;
+  --z-index-dropdown: 98;
+  --z-index-above-foreground: 2;
+  --z-index-foreground: 1;
+  --z-index-under-background: -1;
+}
+
 body {
   margin: 0px;
   font-size: 1rem;
@@ -19,7 +52,7 @@ div {
   display: block;
 }
 
-.root {
+#root {
   height: 100%;
 }
 
