@@ -39,7 +39,6 @@ body {
     background-color: $--colors-white;
     -webkit-font-smoothing: antialiased;
     height: 100%;
-    display: block;
 }
 div {
     display: block;
@@ -172,7 +171,7 @@ img {
 }
 .call {
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 700;
     transition: color 0.2s ease 0s;
     cursor: pointer;
     font-size: 0.875rem;
@@ -302,14 +301,6 @@ h1 {
     padding: 0px 1rem;
     color: $--colors-woodsmoke;
     background-color: $--colors-orange-base;
-}
-.Call2 {
-    text-transform: uppercase;
-    font-weight: 800;
-    transition: color 0.2s ease 0s;
-    cursor: pointer;
-    font-size: 0.875rem;
-    line-height: 1.125rem;
 }
 .Perk {
     display: flex;
