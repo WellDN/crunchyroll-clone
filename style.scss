@@ -249,9 +249,6 @@ img {
 .PerksWrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.375rem 2.1875rem;
-    max-width: 23.5rem;
-    padding: 0px 1.25rem;
 }
 @media (min-width: 35.5em) {
 .centraltitle {
