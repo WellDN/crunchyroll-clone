@@ -315,7 +315,7 @@ h1 {
     margin-bottom: 1rem;
     fill: currentColor;
 }
-path {
+path[d] {
     d: path("M 20 40 a 20 20 0 1 1 0 -40 a 20 20 0 0 1 0 40 Z m 0 -2 a 18 18 0 1 0 0 -36 a 18 18 0 0 0 0 36 Z m -5.75 -12.66 L 19 20 V 9 h 2 v 11.38 a 1 1 0 0 1 -0.25 0.66 l -5 5.62 l -1.5 -1.32 Z");
 }
 :not(svg) {
@@ -330,6 +330,7 @@ path {
 .Text {
     font-weight: 500;
 }
+//idk maybe try [] to give the especific attributes
 path {
     d: path("M 20 40 a 6 6 0 1 1 0.01 -12.01 A 6 6 0 0 1 20 40 Z m 0 -2 a 4 4 0 1 0 0 -8 a 4 4 0 0 0 0 8 Z m 0 -38 a 6 6 0 0 1 6 6 v 14 a 6 6 0 1 1 -12 0 V 6 a 6 6 0 0 1 6 -6 Z m 0 2 a 4 4 0 0 0 -4 4 v 14 a 4 4 0 1 0 8 0 V 6 a 4 4 0 0 0 -4 -4 Z");
 }
