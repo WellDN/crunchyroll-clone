@@ -423,7 +423,7 @@ h1 {
           transform-origin: 0px 0px;
 }
 
-@media (min-widt: 35.5em) {
+@media (min-width: 35.5em) {
   .Text {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -432,5 +432,6 @@ h1 {
 
 .Text {
   font-weight: 500;
+  font-size: 0.975rem;
 }
 /*# sourceMappingURL=style.css.map */
