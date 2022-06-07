@@ -34,8 +34,6 @@ $--z-index-under-background: -1;
 body {
     font-family: Lato, sans-serif;
     margin: 0px;
-    font-size: 1rem;
-    color: rgb(0, 0, 0);
     background-color: $--colors-white;
     -webkit-font-smoothing: antialiased;
     height: 100%;
@@ -181,6 +179,7 @@ img {
     .stackedlayout {
     --top-gutter: 4.5rem;
     --bottom-gutter:4.5rem;
+    text-align: center;
     }
 }
 .stackedlayout {
@@ -197,7 +196,7 @@ img {
 }
 @media (min-width: 35.5em){
     .ContentBlock2 {
-    --gutter: 10;
+    --gutter: 17;
     --horizontal-padding: 2.5rem;
     }
 }
@@ -444,7 +443,8 @@ h3 {
 }
 @media (min-width: 35.5em) {
     .Availability {
-        width: 100%;
+    width: 100%;
+    padding: 0px 2.5rem;
     }
 }
 .Availability {
@@ -455,118 +455,192 @@ h3 {
     justify-content: center;
     color: $--colors-silver-chalice;
     padding-bottom: 2rem;
-    font-size: 0.875rem;
+    font-size: 0.850rem;
     line-height: 1.125rem;
-    font-weight: 600;
+    font-weight: 540;
 }
 @media (min-width: 35.5em) {
     .Text2 {
-
+        font-size: 1.125rem;
+        line-height: 1.625rem;
     }
 }
 .Text2 {
-
+    font-weight: 500;
 }
 .BasicLink {
-
+    color: $--colors-orange-base;
+    text-transform: none;
+}
+.ContentBlock:last-child {
+    margin-bottom: 0px;
 }
 .HelpCenter {
-
+    display: flex;
+    flex-direction: column;
 }
 @media (min-width: 35.5em) {
     .TitleHeading {
-
+    font-size: 1.75rem;
+    line-height: 2.25rem;
     }
 }
 .TitleHeading {
-
+    text-align: center;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
 }
 @media (min-width: 35.5em) {
     .Text3 {
-
+    font-size: 1.125rem;
+    line-height: 1.625rem;
     }
 }
 .Text3 {
-
+    text-align: center;
+    font-weight: 500;
 }
 @media (min-width: 35.5em) {
     .Footer {
-
+        padding: 1.5rem 1.25rem 2.5rem;
     }
 }
 .Footer {
-
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    margin: auto auto 0px;
 }
 @media (min-width: 35.5em) {
     .FooterTopRow {
-
+    margin-bottom: 1.5rem;
     }
 }
 .FooterTopRow {
-
+    text-align: center;
+}
+.LinksWrapper {
+    display: flex;
+    flex-flow: column wrap;
 }
 @media (min-width: 35.5em) {
     .LinksWrapper {
-
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: baseline;
+    align-items: baseline;
     }
-}
-.LinksWrapper {
-
 }
 @media (min-width: 35.5em) {
-    .BasicLinkFooterText {
-
+    .BasicLinkFooterText:not(:last-child) {
+        margin-bottom: 0.75rem;
     }
 }
+@media (min-width: 35.5em) {
 .BasicLinkFooterText {
-
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+}
+.BasicLinkFooterText {
+    color: $--colors-orange-base;
+    text-transform: none;
+}
+@media (min-width: 35.5em) {
+    .FooterLinkDivider::after {
+        display: block;
+    }
+}
+.FooterLinkDivider::after {
+    content: "|";
+    padding: 0px 1rem;
+    color: $--colors-silver;
 }
 @media (min-width: 35.5em) {
     .FlexDivider {
-
+        display: block;
+        height: 0px;
+        flex-basis: 100%;
     }
-}
-.FlexDivider {
-
 }
 @media (min-width: 35.5em) {
     .FooterBottom {
-
+        padding: 0px 2.5rem;
     }
 }
 .FooterBottom {
-
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%
 }
 @media (min-width: 35.5em) {
     .Copyright {
-
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 }
 .Copyright {
-
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+p {
+    text-rendering: initial;
+    margin: 0px;
 }
 @media (min-width: 35.5em) {
     .Selector {
-
+        width: 11.25rem;
     }
 }
 .Selector {
-
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border: solid 0.125rem $--colors-black;
+    cursor: pointer;
+    padding: 0.375rem 0.375rem 0.375rem 0.625rem;
+    position: relative;
 }
 @media (min-width: 35.5em) {
     .Language {
-
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 }
 .Language {
-
+    flex: 1 1 auto;
+    padding-right: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
 }
 .Icon0 {
-
+    flex: 0 0 auto;
+    width: 1.5rem;
+    transition: transform 0.1s ease-in-out 0s;
+    transform: rotate(90deg);
 }
 .LanguageList {
-
+    position: absolute;
+    bottom: 100%;
+    border: solid 0.125rem $--colors-black;
+    right: -0.125rem;
+    left: -0.125rem;
+    z-index: $--z-index-dropdown;
+    display: none;
+    background-color: $--colors-white;
+}
+ul {
+    padding: 0px;
+    margin: 0px;
 }
 .li {
-    
+    list-style-type: none;
 }
