@@ -280,6 +280,11 @@ img {
     margin-bottom: 5rem;
     }
 }
+@media (min-width: 64em) {
+    .TitleWrapper {
+        margin-bottom: 7.5rem;
+    }
+}
 .PerksWrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

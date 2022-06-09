@@ -217,7 +217,6 @@ a {
   .stackedlayout {
     --top-gutter: 4.5rem;
     --bottom-gutter:4.5rem;
-    text-align: center;
   }
 }
 
@@ -295,6 +294,13 @@ a {
   }
 }
 
+@media (min-width: 64em) {
+  .heroblock {
+    padding-top: 12.5rem;
+    padding-bottom: 4.5rem;
+  }
+}
+
 .call {
   text-transform: uppercase;
   font-weight: 600;
@@ -350,6 +356,12 @@ img {
   .TitleWrapper {
     padding: 0px;
     margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .TitleWrapper {
+    margin-bottom: 7.5rem;
   }
 }
 
