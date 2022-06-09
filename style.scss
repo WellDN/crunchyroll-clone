@@ -173,7 +173,6 @@ a {
     .stackedlayout {
     --top-gutter: 4.5rem;
     --bottom-gutter:4.5rem;
-    text-align: center;
     }
 }
 @media (min-width: 50em) {
@@ -232,6 +231,12 @@ a {
     .heroblock {
     padding-top: 8.5rem;
     padding-bottom: 4rem;
+    }
+}
+@media (min-width: 64em) {
+    .heroblock {
+        padding-top: 12.5rem;
+        padding-bottom: 4.5rem;
     }
 }
 .call {
