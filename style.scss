@@ -772,7 +772,7 @@ p {
         width: 11.25rem;
     }
 }
-.Language {
+.LanguageText {
     flex: 1 1 auto;
     padding-right: 0.5rem;
     white-space: nowrap;
@@ -783,7 +783,7 @@ p {
     font-weight: 600;
 }
 @media (min-width: 35.5em) {
-    .Language {
+    .LanguageText {
         font-size: 1rem;
         line-height: 1.5rem;
     }
@@ -804,6 +804,20 @@ p {
     z-index: $--z-index-dropdown;
     display: none;
     background-color: $--colors-white;
+}
+.Language {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: $--colors-silver-chalice;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-weight: 600;
+}
+@media (min-width: 35.5em) {
+    .Language {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
 }
 ul {
     padding: 0px;

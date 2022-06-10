@@ -1009,7 +1009,7 @@ p {
   }
 }
 
-.Language {
+.LanguageText {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -1023,7 +1023,7 @@ p {
 }
 
 @media (min-width: 35.5em) {
-  .Language {
+  .LanguageText {
     font-size: 1rem;
     line-height: 1.5rem;
   }
@@ -1052,6 +1052,22 @@ p {
   z-index: 98;
   display: none;
   background-color: white;
+}
+
+.Language {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  color: #a0a0a0;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 600;
+}
+
+@media (min-width: 35.5em) {
+  .Language {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 ul {
