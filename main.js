@@ -1,4 +1,3 @@
-
 const list = document.querySelector('#lan-list');
 const listLan = document.querySelector('.LanguageList');
 
