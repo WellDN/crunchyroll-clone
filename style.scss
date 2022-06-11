@@ -28,6 +28,10 @@ $--z-index-dropdown: 98;
 $--z-index-above-foreground: 2;
 $--z-index-foreground: 1;
 $--z-index-under-background: -1;
+
+:export {
+    $--colors-orange-bright: $--colors-orange-bright;
+}
 * {
     box-sizing: border-box;
 }
@@ -842,7 +846,7 @@ ul {
     padding: 0px;
     margin: 0px;
 }
-.li {
+li {
     list-style-type: none;
 }
 .StyledButton:first-of-type {
