@@ -12,9 +12,26 @@ list.addEventListener('click', selectList);
 
 //hover on styledButton
 
-const hover = document.querySelector('.StyledButton3');
-//transition color $--colors-orange-bright
-const hoverButton = () => {
-    hover.addEventListener.
+var target = document.querySelector('.StyledButton3');
+target.addEventListener("mouseover", mOver, false);
+target.addEventListener("mouseout", mOut, false);
+
+function mOver() {
+   target.setAttribute("style", "background-color: rgb(255, 148, 77)");
 }
 
+function mOut() {  
+   target.setAttribute("style", "");
+}
+
+var targetTwo = document.querySelector('#StyledButtonn');
+targetTwo.addEventListener("mouseover", mouseOver, false);
+targetTwo.addEventListener("mouseout", mouseOut, false);
+
+function mouseOver() {
+   targetTwo.setAttribute("style", "background-color: rgb(255, 148, 77)");
+}
+
+function mouseOut() {  
+   targetTwo.setAttribute("style", "");
+}
