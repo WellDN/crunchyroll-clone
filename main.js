@@ -35,3 +35,40 @@ function mouseOver() {
 function mouseOut() {  
    targetTwo.setAttribute("style", "");
 }
+
+//Basic link underline mouse over
+
+var underLine = document.querySelector('.BasicLink');
+underLine.addEventListener('mouseover', mouOver, false);
+underLine.addEventListener('mouseout', mouOut, false);
+
+function mouOver() {
+   underLine.setAttribute('style', 'text-decoration-line:underline');
+}
+
+function mouOut() {
+   underLine.setAttribute('style', '');
+}
+
+var underTwo = document.querySelector('#BasicLinkk');
+underTwo.addEventListener('mouseover', mousOver, false);
+underTwo.addEventListener('mouseout', mousOut, false);
+
+function mousOver() {
+   underTwo.setAttribute('style', 'text-decoration-line:underline');
+}
+function mousOut() {
+   underTwo.setAttribute('style', '');
+}
+
+var underThree = document.querySelector('.BasicLinkFooterText');
+underThree.addEventListener('mouseover', mouuOver, false);
+underThree.addEventListener('mouseout', mouuOut, false);
+
+function mouuOver() {
+   underThree.setAttribute('style', 'text-decoration-line:underline');
+}
+
+function mouuOut() {
+   underThree.setAttribute('style', '');
+}
