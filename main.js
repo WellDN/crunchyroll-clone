@@ -97,3 +97,26 @@ function mouuuuOut() {
    underFive.setAttribute('style', '');
 }
 
+//hover on buttonsgroup
+
+document.getElementById('stn').addEventListener('mouseover', mouseeOver);
+document.getElementById('stn').addEventListener('mouseout', mouseeOut);
+
+function mouseeOver() {
+   document.getElementById('stn').style.color = 'rgb(255,255,255)';
+}
+function mouseeOut() {
+   document.getElementById('stn').style.color = '';
+}
+
+document.getElementById('nts').addEventListener('mouseover', mouseeeOver);
+document.getElementById('nts').addEventListener('mouseout', mouseeeOut);
+
+function mouseeeOver() {
+   document.getElementById('nts').style.color = 'rgb(255,255,255)';
+}
+function mouseeeOut() {
+   document.getElementById('nts').style.color = '';
+}
+
+
